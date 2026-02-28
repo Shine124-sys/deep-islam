@@ -1,0 +1,96 @@
+import Link from 'next/link';
+import VerseExplorer from '@/components/VerseExplorer';
+
+const trackData: Record<string, { title: string, color: string, summary: string, topics: string[] }> = {
+    fiqh: {
+        title: "Fiqh & Ethics",
+        color: "var(--accent-gold)",
+        summary: "Exploring the evolution of Islamic jurisprudence in the context of modern ethical dilemmas, human rights, and global governance.",
+        topics: ["Financial Ethics", "Bioethics", "Social Justice", "Environmental Law"]
+    },
+    metaphysics: {
+        title: "Metaphysics & Soul",
+        color: "var(--accent-blue)",
+        summary: "Deep dives into the nature of existence, the Unseen (Al-Ghaib), the soul's journey, and the Divine Attributes.",
+        topics: ["Nature of Reality", "The Soul (Ruh)", "Divine Oneness", "Cosmological Arguments"]
+    },
+    psychology: {
+        title: "Psychology & Nafs",
+        color: "var(--accent-teal)",
+        summary: "Analyzing the Quranic framework for human behavior, mental health, and the purification of the self (Tazkiyah).",
+        topics: ["Cognitive Balance", "Emotional Regulation", "The Heart (Qalb)", "Behavioral Change"]
+    },
+    'science-tech': {
+        title: "Science & Technology",
+        color: "var(--accent-gold)",
+        summary: "Investigating the empirical signs (Ayat) in the universe and the ethical dimensions of emerging technologies, from cosmology to AI and biotechnology.",
+        topics: ["Astronomy & Cosmology", "Biology & Embryology", "AI & Robotics", "Complexity Theory", "Quantum Perspectives"]
+    }
+};
+
+export default async function TrackPage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
+    const track = trackData[id as keyof typeof trackData];
+
+    if (!track) {
+        return <div style={{ padding: '5rem', textAlign: 'center' }}>Track not found. <Link href="/">Return home</Link></div>;
+    }
+
+    return (
+        <main style={{ minHeight: '100vh', background: 'var(--background)', color: 'var(--foreground)' }}>
+            {/* Header */}
+            <div style={{
+                padding: '4rem 5%',
+                borderBottom: '1px solid var(--glass-border)',
+                background: `linear-gradient(to bottom, rgba(0,0,0,0.4), transparent)`
+            }}>
+                <div style={{ marginBottom: '1rem' }}>
+                    <Link href="/" style={{ color: 'var(--accent-teal)', textDecoration: 'none' }}>← Back to Overview</Link>
+                </div>
+                <h1 style={{ fontSize: '3.5rem', color: track.color, marginBottom: '1.5rem' }}>{track.title}</h1>
+                <p style={{ fontSize: '1.2rem', maxWidth: '800px', lineHeight: '1.8', color: '#a0aec0' }}>
+                    {track.summary}
+                </p>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: '300px 1fr', gap: '3rem', padding: '3rem 5%' }}>
+                {/* Sidebar Topics */}
+                <aside>
+                    <h3 style={{ marginBottom: '1.5rem', fontSize: '1.2rem' }}>Focus Areas</h3>
+                    <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                        {track.topics.map(topic => (
+                            <li key={topic} className="glass-card" style={{ padding: '1rem', cursor: 'pointer' }}>
+                                {topic}
+                            </li>
+                        ))}
+                    </ul>
+                </aside>
+
+                {/* Content Area */}
+                <section>
+                    <div style={{ marginBottom: '4rem' }}>
+                        <h2 style={{ marginBottom: '2rem' }}>Core Research Explorer</h2>
+                        <VerseExplorer trackId={id} />
+                    </div>
+
+                    <div className="glass-card mirror-effect" style={{ padding: '2rem' }}>
+                        <h3 style={{ marginBottom: '1rem' }}>Featured Publication</h3>
+                        <p style={{ color: '#a0aec0', marginBottom: '1.5rem' }}>
+                            "The integration of traditional Quranic exegesis with {track.title} methodologies..."
+                        </p>
+                        <button style={{
+                            background: 'transparent',
+                            border: `1px solid ${track.color}`,
+                            color: track.color,
+                            padding: '0.75rem 1.5rem',
+                            borderRadius: '8px',
+                            cursor: 'pointer'
+                        }}>
+                            Download PDF Research
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    );
+}
