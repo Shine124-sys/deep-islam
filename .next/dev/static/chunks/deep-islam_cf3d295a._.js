@@ -20,6 +20,7 @@ const sampleVerses = [
         translation: "...And We sent down iron, wherein is great might and benefits for the people...",
         annotations: {
             science: "Iron on Earth is not indigenous; it was 'sent down' from space via supernovae and meteorite impacts, a process known as iron seeding.",
+            'science-tech': "The 'sending down' of iron suggests celestial origins (supernovae), while its 'great might' and 'benefits' provide the ontological basis for metallurgy, structural engineering, and the tech-driven industrial age.",
             fiqh: "The mention of 'benefits for the people' establishes the theological basis for the industrial use of minerals and the ethics of resource management.",
             metaphysics: "Iron symbolizes the descent of celestial strength into the material world, representing both protection and testing.",
             psychology: "The 'might' of iron is mirrored in the 'Might' (Al-'Izza) required for self-discipline and psychological resilience."
@@ -32,6 +33,7 @@ const sampleVerses = [
         translation: "And you see the mountains, thinking them rigid, while they pass as the passing of clouds...",
         annotations: {
             science: "This refers to the motion of tectonic plates and the Earth's rotation, movements that are imperceptible to the naked eye but constant.",
+            'science-tech': "The relative motion of mountains parallels the hidden dynamics of the quantum world and the fluidity of information in digital networks – where stability is an emergent property of constant underlying motion.",
             psychology: "Perspective vs. Reality: This verse challenges our psychological perception of stability, reminding us that constant change is the underlying reality.",
             metaphysics: "The fluidity of matter and the constant 'renewal of creation' (Tajdid al-Khalq) at every moment.",
             fiqh: "Supports the concept of 'Ijtihad' – where apparent stability in law must account for the underlying movement and evolution of society."
@@ -68,12 +70,12 @@ function VerseExplorer({ trackId }) {
                         children: v.reference
                     }, v.id, false, {
                         fileName: "[project]/deep-islam/src/components/VerseExplorer.tsx",
-                        lineNumber: 47,
+                        lineNumber: 49,
                         columnNumber: 21
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/deep-islam/src/components/VerseExplorer.tsx",
-                lineNumber: 45,
+                lineNumber: 47,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -93,7 +95,7 @@ function VerseExplorer({ trackId }) {
                         children: activeVerse.arabic
                     }, void 0, false, {
                         fileName: "[project]/deep-islam/src/components/VerseExplorer.tsx",
-                        lineNumber: 67,
+                        lineNumber: 69,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -110,7 +112,7 @@ function VerseExplorer({ trackId }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/deep-islam/src/components/VerseExplorer.tsx",
-                        lineNumber: 75,
+                        lineNumber: 77,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -134,7 +136,7 @@ function VerseExplorer({ trackId }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/deep-islam/src/components/VerseExplorer.tsx",
-                                lineNumber: 80,
+                                lineNumber: 82,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -145,25 +147,25 @@ function VerseExplorer({ trackId }) {
                                 children: activeVerse.annotations[trackId] || "Research ongoing for this track."
                             }, void 0, false, {
                                 fileName: "[project]/deep-islam/src/components/VerseExplorer.tsx",
-                                lineNumber: 83,
+                                lineNumber: 85,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/deep-islam/src/components/VerseExplorer.tsx",
-                        lineNumber: 79,
+                        lineNumber: 81,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/deep-islam/src/components/VerseExplorer.tsx",
-                lineNumber: 66,
+                lineNumber: 68,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/deep-islam/src/components/VerseExplorer.tsx",
-        lineNumber: 44,
+        lineNumber: 46,
         columnNumber: 9
     }, this);
 }

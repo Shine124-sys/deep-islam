@@ -1,14 +1,8 @@
-[00:00:17.367] Server  LOG     ✓ Ready in 9.5s
-[00:00:20.633] Server  LOG     ○ Compiling / ...
-[00:00:47.988] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:57.505] Server  LOG     ✓ Finished writing to filesystem cache in 13.0s
-[00:01:34.212] Server  LOG     ○ Compiling /tracks/[id] ...
-[00:01:37.138] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:04.162] Server  LOG     ✓ Finished writing to filesystem cache in 23.5s
-[00:04:40.310] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:07.211] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:58.034] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:58.034] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:09.655] Server  LOG     ✓ Ready in 6.7s
+[00:00:49.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:39.438] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:17.190] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:18.047] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -38,12 +32,54 @@ It can also happen if the client has a browser extension installed which messes 
                       <RootLayout>
                         <html
                           lang="en"
--                         data-redeviation-bs-uid="4b4admrmuur"
--                         className={" ekvdbzgf idc0_350"}
+-                         data-redeviation-bs-uid="kk142dspq0d"
                         >
                           <body
                             className="inter_b2991b2-module__9mH_6q__variable playfair_display_b7700c01-module__LbZqPq..."
 -                           data-writer-injected="true"
+-                           data-new-gr-c-s-check-loaded="14.1275.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:03:39.078] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:39.670] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/deep-isla...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         data-redeviation-bs-uid="aphm5onjii"
+                        >
+                          <body
+                            className="inter_b2991b2-module__9mH_6q__variable playfair_display_b7700c01-module__LbZqPq..."
+-                           data-writer-injected="true"
+-                           data-new-gr-c-s-check-loaded="14.1275.0"
+-                           data-gr-ext-installed=""
                           >
                   ...
 
