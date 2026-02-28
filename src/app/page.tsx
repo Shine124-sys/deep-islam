@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export default function Home() {
     const tracks = [
@@ -10,27 +12,7 @@ export default function Home() {
 
     return (
         <main style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-            {/* Navbar */}
-            <nav style={{
-                padding: '1.5rem 5%',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                position: 'sticky',
-                top: 0,
-                zIndex: 100,
-                background: 'rgba(5, 7, 10, 0.8)',
-                backdropFilter: 'blur(10px)'
-            }}>
-                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', fontFamily: 'var(--font-serif)' }} className="gradient-text">
-                    Deep-Islam
-                </div>
-                <div style={{ display: 'flex', gap: '2rem' }}>
-                    <Link href="/research" style={{ color: 'var(--foreground)', textDecoration: 'none' }}>Research</Link>
-                    <Link href="/about" style={{ color: 'var(--foreground)', textDecoration: 'none' }}>About</Link>
-                    <Link href="/library" style={{ color: 'var(--foreground)', textDecoration: 'none' }}>Library</Link>
-                </div>
-            </nav>
+            <Navbar />
 
             {/* Hero Section */}
             <section style={{
@@ -88,16 +70,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Footer */}
-            <footer style={{
-                padding: '3rem 5%',
-                textAlign: 'center',
-                borderTop: '1px solid var(--glass-border)',
-                marginTop: '4rem',
-                color: '#636e72'
-            }}>
-                © 2026 Deep-Islam Global Research. Built for universal academic access.
-            </footer>
+            <Footer />
         </main>
     );
 }
