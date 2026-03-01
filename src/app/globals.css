@@ -76,15 +76,19 @@ h4 {
     --section-padding: 2rem 5%;
     --h1-size: 2.5rem;
     --h2-size: 1.8rem;
+    --card-padding: 1.5rem;
+    --grid-gap: 1.5rem;
   }
 
   .mobile-stack {
+    display: flex !important;
     flex-direction: column !important;
-    gap: 2rem !important;
+    gap: var(--grid-gap) !important;
   }
 
   .mobile-grid-1 {
     grid-template-columns: 1fr !important;
+    gap: var(--grid-gap) !important;
   }
 
   .mobile-hide {
@@ -92,7 +96,7 @@ h4 {
   }
 
   .glass-card {
-    padding: 1.5rem !important;
+    padding: var(--card-padding) !important;
   }
 }
 
@@ -101,6 +105,8 @@ h4 {
     --section-padding: 4rem 5%;
     --h1-size: 4rem;
     --h2-size: 2.5rem;
+    --card-padding: 3rem;
+    --grid-gap: 4rem;
   }
 }
 

@@ -1,8 +1,9 @@
-[00:00:09.655] Server  LOG     ✓ Ready in 6.7s
-[00:00:49.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:39.438] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:17.190] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:18.047] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:14.856] Server  LOG     ✓ Ready in 13.3s
+[00:00:17.933] Server  LOG     ○ Compiling / ...
+[00:00:38.795] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:52.572] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:54.699] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:03.043] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -32,7 +33,8 @@ It can also happen if the client has a browser extension installed which messes 
                       <RootLayout>
                         <html
                           lang="en"
--                         data-redeviation-bs-uid="kk142dspq0d"
+-                         data-redeviation-bs-uid="5c9xjsrpq1t"
+-                         className={" pybddf idc0_350"}
                         >
                           <body
                             className="inter_b2991b2-module__9mH_6q__variable playfair_display_b7700c01-module__LbZqPq..."
@@ -42,8 +44,7 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:03:39.078] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:39.670] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:02:09.208] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -73,7 +74,8 @@ It can also happen if the client has a browser extension installed which messes 
                       <RootLayout>
                         <html
                           lang="en"
--                         data-redeviation-bs-uid="aphm5onjii"
+-                         data-redeviation-bs-uid="iuh90lbkgjr"
+-                         className={" vlkpvel idc0_350"}
                         >
                           <body
                             className="inter_b2991b2-module__9mH_6q__variable playfair_display_b7700c01-module__LbZqPq..."
@@ -83,104 +85,3 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:20:36.693] Server  LOG     ✓ Compiled in 3.3s
-[00:21:04.064] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:22:54.361] Server  LOG     ○ Compiling /about ...
-[00:23:34.660] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:34:48.289] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:34:55.424] Server  LOG     ✓ Compiled in 375ms
-[00:35:13.779] Server  LOG     ○ Compiling /_not-found/page ...
-[00:35:22.739] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:35:27.101] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:35:52.352] Server  WARN    ⚠ Cross origin request detected from 127.0.0.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:35:52.659] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:35:53.325] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="/deep-isla...">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         data-redeviation-bs-uid="n7min5fkcyt"
-                        >
-                          <body
-                            className="inter_b2991b2-module__9mH_6q__variable playfair_display_b7700c01-module__LbZqPq..."
--                           data-writer-injected="true"
--                           data-new-gr-c-s-check-loaded="14.1275.0"
--                           data-gr-ext-installed=""
-                          >
-                  ...
-
-[00:46:28.001] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:46:36.721] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="/deep-isla...">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         data-redeviation-bs-uid="5xzlipjlncm"
-                        >
-                          <body
-                            className="inter_b2991b2-module__9mH_6q__variable playfair_display_b7700c01-module__LbZqPq..."
--                           data-writer-injected="true"
--                           data-new-gr-c-s-check-loaded="14.1275.0"
--                           data-gr-ext-installed=""
-                          >
-                  ...
-
-[02:07:08.924] Server  LOG     ✓ Compiled in 1550ms
-[02:07:09.384] Server  LOG     ✓ Compiled in 333ms
-[02:07:12.632] Server  LOG     ✓ Compiled in 140ms
-[02:07:18.747] Server  LOG     ✓ Compiled in 1073ms
-[02:07:25.769] Server  LOG     ✓ Compiled in 166ms
-[02:07:28.719] Server  LOG     ✓ Compiled in 217ms
-[02:07:30.287] Server  LOG     ✓ Compiled in 265ms
-[02:07:40.754] Server  LOG     ✓ Compiled in 396ms

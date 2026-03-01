@@ -6,12 +6,19 @@ export default function AboutPage() {
         <main style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--background)' }}>
             <Navbar />
 
-            <div className="section-container" style={{ flex: 1, maxWidth: '1200px', margin: '0 auto' }}>
-                <div className="glass-card mirror-effect mobile-stack" style={{ padding: '3rem', display: 'grid', gridTemplateColumns: 'minmax(200px, 1fr) 2fr', gap: '4rem', alignItems: 'start' }}>
+            <div className="section-container" style={{ flex: 1, maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
+                <div className="glass-card mirror-effect mobile-stack" style={{
+                    padding: 'var(--card-padding)',
+                    display: 'grid',
+                    gridTemplateColumns: 'minmax(200px, 1fr) 2fr',
+                    gap: 'var(--grid-gap)',
+                    alignItems: 'start',
+                    position: 'relative'
+                }}>
 
                     {/* Left Column: Photo & Brief Info */}
-                    <div style={{ textAlign: 'center' }}>
-                        <div style={{ position: 'relative', display: 'inline-block' }}>
+                    <div style={{ textAlign: 'center', width: '100%' }}>
+                        <div style={{ position: 'relative', display: 'inline-block', maxWidth: '100%' }}>
                             <div style={{
                                 position: 'absolute',
                                 inset: '-4px',
@@ -23,7 +30,13 @@ export default function AboutPage() {
                                 src="/profile.jpeg"
                                 alt="Shoriful - Quran Researcher"
                                 width="220"
-                                style={{ borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', marginBottom: '1.5rem' }}
+                                style={{
+                                    borderRadius: '12px',
+                                    boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
+                                    marginBottom: '1.5rem',
+                                    maxWidth: '100%',
+                                    height: 'auto'
+                                }}
                             />
                         </div>
                         <h2 style={{ fontSize: '1.8rem', marginBottom: '0.5rem' }}>Shoriful</h2>
@@ -41,7 +54,7 @@ export default function AboutPage() {
                             My work combines traditional Islamic scholarship with analytical and research-driven methodologies.
                         </p>
 
-                        <div className="mobile-grid-1" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+                        <div className="mobile-grid-1" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--grid-gap)' }}>
                             {/* Research Interests */}
                             <div>
                                 <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', borderLeft: '3px solid var(--accent-gold)', paddingLeft: '1rem' }}>
