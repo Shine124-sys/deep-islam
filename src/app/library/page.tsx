@@ -22,24 +22,26 @@ export default function LibraryPage() {
             <div style={{ flex: 1 }}>
                 {/* Banner Section */}
                 <div style={{
-                    height: '400px',
+                    minHeight: '300px',
+                    height: 'auto',
                     width: '100%',
                     position: 'relative',
                     overflow: 'hidden',
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    padding: '4rem 5%'
                 }}>
                     <img src="/library_banner.png" style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover', opacity: 0.6 }} alt="Library Banner" />
-                    <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', padding: '0 5%' }}>
-                        <h1 className="gradient-text" style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>Digital Library</h1>
-                        <p style={{ fontSize: '1.2rem', color: '#f8f9fa', maxWidth: '800px', margin: '0 auto' }}>
+                    <div style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
+                        <h1 className="gradient-text responsive-h1" style={{ marginBottom: '1rem' }}>Digital Library</h1>
+                        <p style={{ fontSize: '1.1rem', color: '#f8f9fa', maxWidth: '800px', margin: '0 auto' }}>
                             A curated repository of primary sources, reference materials, and scholarly archives for the discerning student of knowledge.
                         </p>
                     </div>
                 </div>
 
-                <div style={{ padding: '4rem 5%', maxWidth: '1200px', margin: '0 auto' }}>
+                <div className="section-container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     {/* Collections Grid */}
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
                         {collections.map(col => (

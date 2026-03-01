@@ -25,7 +25,10 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-serif);
   color: var(--accent-gold);
 }
@@ -59,9 +62,56 @@ h1, h2, h3, h4 {
 .gradient-text {
   background: linear-gradient(135deg, var(--accent-gold) 0%, #ffffff 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .teal-glow {
   filter: drop-shadow(0 0 10px rgba(29, 177, 158, 0.3));
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 2rem 5%;
+    --h1-size: 2.5rem;
+    --h2-size: 1.8rem;
+  }
+
+  .mobile-stack {
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+
+  .mobile-grid-1 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .mobile-hide {
+    display: none !important;
+  }
+
+  .glass-card {
+    padding: 1.5rem !important;
+  }
+}
+
+@media (min-width: 769px) {
+  :root {
+    --section-padding: 4rem 5%;
+    --h1-size: 4rem;
+    --h2-size: 2.5rem;
+  }
+}
+
+.responsive-h1 {
+  font-size: var(--h1-size);
+}
+
+.responsive-h2 {
+  font-size: var(--h2-size);
+}
+
+.section-container {
+  padding: var(--section-padding);
 }

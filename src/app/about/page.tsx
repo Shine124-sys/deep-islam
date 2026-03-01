@@ -6,8 +6,8 @@ export default function AboutPage() {
         <main style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--background)' }}>
             <Navbar />
 
-            <div style={{ flex: 1, padding: '4rem 5%', maxWidth: '1200px', margin: '0 auto' }}>
-                <div className="glass-card mirror-effect" style={{ padding: '3rem', display: 'grid', gridTemplateColumns: 'minmax(220px, 1fr) 2fr', gap: '4rem', alignItems: 'start' }}>
+            <div className="section-container" style={{ flex: 1, maxWidth: '1200px', margin: '0 auto' }}>
+                <div className="glass-card mirror-effect mobile-stack" style={{ padding: '3rem', display: 'grid', gridTemplateColumns: 'minmax(200px, 1fr) 2fr', gap: '4rem', alignItems: 'start' }}>
 
                     {/* Left Column: Photo & Brief Info */}
                     <div style={{ textAlign: 'center' }}>
@@ -34,14 +34,14 @@ export default function AboutPage() {
 
                     {/* Right Column: Bio & Details */}
                     <div>
-                        <h1 className="gradient-text" style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>About Me</h1>
+                        <h1 className="gradient-text responsive-h1" style={{ marginBottom: '1.5rem' }}>About Me</h1>
 
-                        <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#a0aec0', marginBottom: '2.5rem' }}>
+                        <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#a0aec0', marginBottom: '2.5rem' }}>
                             I am Shoriful, a dedicated Qur'an researcher focused on exploring the depth, structure, and intellectual richness of the Qur'an.
                             My work combines traditional Islamic scholarship with analytical and research-driven methodologies.
                         </p>
 
-                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+                        <div className="mobile-grid-1" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
                             {/* Research Interests */}
                             <div>
                                 <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', borderLeft: '3px solid var(--accent-gold)', paddingLeft: '1rem' }}>

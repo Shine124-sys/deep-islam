@@ -176,3 +176,11 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
+[02:07:08.924] Server  LOG     ✓ Compiled in 1550ms
+[02:07:09.384] Server  LOG     ✓ Compiled in 333ms
+[02:07:12.632] Server  LOG     ✓ Compiled in 140ms
+[02:07:18.747] Server  LOG     ✓ Compiled in 1073ms
+[02:07:25.769] Server  LOG     ✓ Compiled in 166ms
+[02:07:28.719] Server  LOG     ✓ Compiled in 217ms
+[02:07:30.287] Server  LOG     ✓ Compiled in 265ms
+[02:07:40.754] Server  LOG     ✓ Compiled in 396ms

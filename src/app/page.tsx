@@ -15,15 +15,15 @@ export default function Home() {
             <Navbar />
 
             {/* Hero Section */}
-            <section style={{
+            <section className="section-container" style={{
                 flex: 1,
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
                 textAlign: 'center',
-                padding: '4rem 5%',
-                position: 'relative'
+                position: 'relative',
+                minHeight: '80vh'
             }}>
                 <div style={{
                     position: 'absolute',
@@ -36,10 +36,10 @@ export default function Home() {
                     top: '10%'
                 }}></div>
 
-                <h1 style={{ fontSize: '4rem', marginBottom: '1rem' }} className="gradient-text">
+                <h1 style={{ marginBottom: '1rem' }} className="gradient-text responsive-h1">
                     Researching the Quranic Unseen
                 </h1>
-                <p style={{ fontSize: '1.25rem', color: '#a0aec0', maxWidth: '800px', lineHeight: '1.6', marginBottom: '3rem' }}>
+                <p style={{ fontSize: '1.1rem', color: '#a0aec0', maxWidth: '800px', lineHeight: '1.6', marginBottom: '3rem' }}>
                     A world-class digital repository exploring Quranic perspectives through the lens of modern science, psychology, and academic philosophy.
                 </p>
 

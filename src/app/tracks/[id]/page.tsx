@@ -39,21 +39,20 @@ export default async function TrackPage({ params }: { params: Promise<{ id: stri
     return (
         <main style={{ minHeight: '100vh', background: 'var(--background)', color: 'var(--foreground)' }}>
             {/* Header */}
-            <div style={{
-                padding: '4rem 5%',
+            <div className="section-container" style={{
                 borderBottom: '1px solid var(--glass-border)',
                 background: `linear-gradient(to bottom, rgba(0,0,0,0.4), transparent)`
             }}>
                 <div style={{ marginBottom: '1rem' }}>
                     <Link href="/" style={{ color: 'var(--accent-teal)', textDecoration: 'none' }}>← Back to Overview</Link>
                 </div>
-                <h1 style={{ fontSize: '3.5rem', color: track.color, marginBottom: '1.5rem' }}>{track.title}</h1>
-                <p style={{ fontSize: '1.2rem', maxWidth: '800px', lineHeight: '1.8', color: '#a0aec0' }}>
+                <h1 className="responsive-h1" style={{ color: track.color, marginBottom: '1.5rem' }}>{track.title}</h1>
+                <p style={{ fontSize: '1.1rem', maxWidth: '800px', lineHeight: '1.8', color: '#a0aec0' }}>
                     {track.summary}
                 </p>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '300px 1fr', gap: '3rem', padding: '3rem 5%' }}>
+            <div className="section-container mobile-grid-1" style={{ display: 'grid', gridTemplateColumns: 'minmax(250px, 300px) 1fr', gap: '3rem' }}>
                 {/* Sidebar Topics */}
                 <aside>
                     <h3 style={{ marginBottom: '1.5rem', fontSize: '1.2rem' }}>Focus Areas</h3>
