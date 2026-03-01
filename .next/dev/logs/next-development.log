@@ -85,3 +85,148 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
+[00:07:38.359] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:53.013] Server  LOG     ✓ Compiled in 550ms
+[00:30:54.697] Server  ERROR   ⨯ ReferenceError: ScienceRepository is not defined
+[00:30:56.269] Browser ERROR   uncaughtError: ReferenceError: ScienceRepository is not defined
+[00:31:24.002] Server  LOG     ✓ Compiled in 21.9s
+[00:31:24.072] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:31:25.625] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:31.282] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:40:15.170] Server  LOG     ✓ Compiled in 551ms
+[00:40:42.406] Server  LOG     ✓ Compiled in 1173ms
+[00:41:11.750] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:42.837] Server  LOG     ✓ Compiled in 2.1s
+[00:53:43.053] Browser ERROR   ./deep-islam/src/components/PsychologyRepository.tsx:23:15
+Parsing ecmascript source code failed
+  21 |     {
+  22 |         surah: "Ash-Shams",
+> 23 |         verse No: "91:7-10",
+     |               ^^
+  24 |         ayat: "وَنَفْسٍ وَمَا سَوَّاهَا ۖ فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَاهَا",
+  25 |         insight: "The 'Nafs' (self) is described as a balanced entity with inherent capacities for both deviation and self-regulation, placing the responsibility of 'Tazkiyah' (purification) on the individual agent.",
+  26 |         category: "Behavioral Change"
+
+Unexpected token `ident`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./deep-islam/src/components/PsychologyRepository.tsx [Client Component Browser]
+    ./deep-islam/src/app/tracks/[id]/page.tsx [Client Component Browser]
+    ./deep-islam/src/app/tracks/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./deep-islam/src/components/PsychologyRepository.tsx [Client Component SSR]
+    ./deep-islam/src/app/tracks/[id]/page.tsx [Client Component SSR]
+    ./deep-islam/src/app/tracks/[id]/page.tsx [Server Component]
+[00:53:44.990] Browser ERROR   ./deep-islam/src/components/PsychologyRepository.tsx:23:15
+Parsing ecmascript source code failed
+  21 |     {
+  22 |         surah: "Ash-Shams",
+> 23 |         verse No: "91:7-10",
+     |               ^^
+  24 |         ayat: "وَنَفْسٍ وَمَا سَوَّاهَا ۖ فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَاهَا",
+  25 |         insight: "The 'Nafs' (self) is described as a balanced entity with inherent capacities for both deviation and self-regulation, placing the responsibility of 'Tazkiyah' (purification) on the individual agent.",
+  26 |         category: "Behavioral Change"
+
+Unexpected token `ident`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./deep-islam/src/components/PsychologyRepository.tsx [Client Component Browser]
+    ./deep-islam/src/app/tracks/[id]/page.tsx [Client Component Browser]
+    ./deep-islam/src/app/tracks/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./deep-islam/src/components/PsychologyRepository.tsx [Client Component SSR]
+    ./deep-islam/src/app/tracks/[id]/page.tsx [Client Component SSR]
+    ./deep-islam/src/app/tracks/[id]/page.tsx [Server Component]
+[00:53:45.380] Browser ERROR   ./deep-islam/src/components/PsychologyRepository.tsx:23:15
+Parsing ecmascript source code failed
+  21 |     {
+  22 |         surah: "Ash-Shams",
+> 23 |         verse No: "91:7-10",
+     |               ^^
+  24 |         ayat: "وَنَفْسٍ وَمَا سَوَّاهَا ۖ فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَاهَا",
+  25 |         insight: "The 'Nafs' (self) is described as a balanced entity with inherent capacities for both deviation and self-regulation, placing the responsibility of 'Tazkiyah' (purification) on the individual agent.",
+  26 |         category: "Behavioral Change"
+
+Unexpected token `ident`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./deep-islam/src/components/PsychologyRepository.tsx [Client Component Browser]
+    ./deep-islam/src/app/tracks/[id]/page.tsx [Client Component Browser]
+    ./deep-islam/src/app/tracks/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./deep-islam/src/components/PsychologyRepository.tsx [Client Component SSR]
+    ./deep-islam/src/app/tracks/[id]/page.tsx [Client Component SSR]
+    ./deep-islam/src/app/tracks/[id]/page.tsx [Server Component]
+[00:53:54.321] Server  LOG     ✓ Compiled in 510ms
+[00:54:27.158] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:51.428] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:49.487] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:02.493] Server  LOG     ✓ Compiled in 188ms
+[01:01:11.182] Server  LOG     ✓ Compiled in 234ms
+[01:01:11.182] Browser ERROR   uncaughtError: ReferenceError: use is not defined
+[01:01:11.823] Browser ERROR   uncaughtError: ReferenceError: use is not defined
+[01:01:12.752] Browser ERROR   uncaughtError: ReferenceError: use is not defined
+[01:01:12.757] Browser ERROR   uncaughtError: ReferenceError: use is not defined
+[01:01:23.264] Server  LOG     ✓ Compiled in 548ms
+[01:01:23.325] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:01:24.762] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:01:24.769] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:01:24.780] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:01:27.723] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:29.173] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:29.789] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:36.993] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:40.410] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/tracks/sc..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/deep-isla...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         data-redeviation-bs-uid="149ww95kvsqj"
+-                         className={" qlfzqwqp idc0_350"}
+-                         suppresshydrationwarning="true"
+-                         data-qb-installed="true"
+                        >
+                          <body
+                            className="inter_b2991b2-module__9mH_6q__variable playfair_display_b7700c01-module__LbZqPq..."
+-                           data-writer-injected="true"
+-                           data-new-gr-c-s-check-loaded="14.1275.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[01:01:48.874] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:23.729] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:09:57.855] Server  LOG     ✓ Compiled in 53ms
+[01:10:29.141] Server  LOG     ✓ Compiled in 16ms
+[01:11:01.440] Server  LOG     ✓ Compiled in 12ms

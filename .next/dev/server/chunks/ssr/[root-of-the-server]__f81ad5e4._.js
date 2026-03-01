@@ -139,8 +139,8 @@ async function TrackPage({ params }) {
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "section-container",
                 style: {
-                    padding: '4rem 5%',
                     borderBottom: '1px solid var(--glass-border)',
                     background: `linear-gradient(to bottom, rgba(0,0,0,0.4), transparent)`
                 },
@@ -158,29 +158,29 @@ async function TrackPage({ params }) {
                             children: "← Back to Overview"
                         }, void 0, false, {
                             fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                            lineNumber: 48,
+                            lineNumber: 47,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                        lineNumber: 47,
+                        lineNumber: 46,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "responsive-h1",
                         style: {
-                            fontSize: '3.5rem',
                             color: track.color,
                             marginBottom: '1.5rem'
                         },
                         children: track.title
                     }, void 0, false, {
                         fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                        lineNumber: 50,
+                        lineNumber: 49,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         style: {
-                            fontSize: '1.2rem',
+                            fontSize: '1.1rem',
                             maxWidth: '800px',
                             lineHeight: '1.8',
                             color: '#a0aec0'
@@ -188,7 +188,7 @@ async function TrackPage({ params }) {
                         children: track.summary
                     }, void 0, false, {
                         fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                        lineNumber: 51,
+                        lineNumber: 50,
                         columnNumber: 17
                     }, this)
                 ]
@@ -198,11 +198,11 @@ async function TrackPage({ params }) {
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "section-container mobile-grid-1",
                 style: {
                     display: 'grid',
-                    gridTemplateColumns: '300px 1fr',
-                    gap: '3rem',
-                    padding: '3rem 5%'
+                    gridTemplateColumns: 'minmax(250px, 300px) 1fr',
+                    gap: '3rem'
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
@@ -215,7 +215,7 @@ async function TrackPage({ params }) {
                                 children: "Focus Areas"
                             }, void 0, false, {
                                 fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                                lineNumber: 59,
+                                lineNumber: 58,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -234,18 +234,18 @@ async function TrackPage({ params }) {
                                         children: topic
                                     }, topic, false, {
                                         fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                                        lineNumber: 62,
+                                        lineNumber: 61,
                                         columnNumber: 29
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                                lineNumber: 60,
+                                lineNumber: 59,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                        lineNumber: 58,
+                        lineNumber: 57,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -262,21 +262,35 @@ async function TrackPage({ params }) {
                                         children: "Core Research Explorer"
                                     }, void 0, false, {
                                         fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 71,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$src$2f$components$2f$VerseExplorer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                         trackId: id
                                     }, void 0, false, {
                                         fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                                        lineNumber: 73,
+                                        lineNumber: 72,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                                lineNumber: 71,
+                                lineNumber: 70,
                                 columnNumber: 21
+                            }, this),
+                            id === 'science-tech' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    marginBottom: '4rem'
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(ScienceRepository, {}, void 0, false, {
+                                    fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
+                                    lineNumber: 77,
+                                    columnNumber: 29
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
+                                lineNumber: 76,
+                                columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "glass-card mirror-effect",
@@ -291,7 +305,7 @@ async function TrackPage({ params }) {
                                         children: "Featured Publication"
                                     }, void 0, false, {
                                         fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 82,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -306,7 +320,7 @@ async function TrackPage({ params }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                                        lineNumber: 78,
+                                        lineNumber: 83,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$deep$2d$islam$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -321,25 +335,25 @@ async function TrackPage({ params }) {
                                         children: "Download PDF Research"
                                     }, void 0, false, {
                                         fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 86,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                                lineNumber: 76,
+                                lineNumber: 81,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                        lineNumber: 70,
+                        lineNumber: 69,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/deep-islam/src/app/tracks/[id]/page.tsx",
-                lineNumber: 56,
+                lineNumber: 55,
                 columnNumber: 13
             }, this)
         ]

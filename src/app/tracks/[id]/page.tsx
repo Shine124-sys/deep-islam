@@ -1,5 +1,11 @@
+'use client';
+
+import React, { useState, use } from 'react';
 import Link from 'next/link';
-import VerseExplorer from '@/components/VerseExplorer';
+import ScienceRepository from '@/components/ScienceRepository';
+import MetaphysicsRepository from '@/components/MetaphysicsRepository';
+import PsychologyRepository from '@/components/PsychologyRepository';
+import FiqhRepository from '@/components/FiqhRepository';
 
 const trackData: Record<string, { title: string, color: string, summary: string, topics: string[] }> = {
     fiqh: {
@@ -28,13 +34,31 @@ const trackData: Record<string, { title: string, color: string, summary: string,
     }
 };
 
-export default async function TrackPage({ params }: { params: Promise<{ id: string }> }) {
-    const { id } = await params;
+export default function TrackPage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = use(params);
+    const [selectedCategory, setSelectedCategory] = useState<string>('All');
     const track = trackData[id as keyof typeof trackData];
 
     if (!track) {
         return <div style={{ padding: '5rem', textAlign: 'center' }}>Track not found. <Link href="/">Return home</Link></div>;
     }
+
+    const topicsWithAll = ['All', ...track.topics];
+
+    const renderRepository = () => {
+        switch (id) {
+            case 'science-tech':
+                return <ScienceRepository selectedCategory={selectedCategory} />;
+            case 'metaphysics':
+                return <MetaphysicsRepository selectedCategory={selectedCategory} />;
+            case 'psychology':
+                return <PsychologyRepository selectedCategory={selectedCategory} />;
+            case 'fiqh':
+                return <FiqhRepository selectedCategory={selectedCategory} />;
+            default:
+                return null;
+        }
+    };
 
     return (
         <main style={{ minHeight: '100vh', background: 'var(--background)', color: 'var(--foreground)' }}>
@@ -53,12 +77,23 @@ export default async function TrackPage({ params }: { params: Promise<{ id: stri
             </div>
 
             <div className="section-container mobile-grid-1" style={{ display: 'grid', gridTemplateColumns: 'minmax(250px, 300px) 1fr', gap: '3rem' }}>
-                {/* Sidebar Topics */}
+                {/* Sidebar Topics / Filter */}
                 <aside>
-                    <h3 style={{ marginBottom: '1.5rem', fontSize: '1.2rem' }}>Focus Areas</h3>
+                    <h3 style={{ marginBottom: '1.5rem', fontSize: '1.2rem' }}>Repository Filter</h3>
                     <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                        {track.topics.map(topic => (
-                            <li key={topic} className="glass-card" style={{ padding: '1rem', cursor: 'pointer' }}>
+                        {topicsWithAll.map(topic => (
+                            <li
+                                key={topic}
+                                className={`glass-card ${selectedCategory === topic ? 'active-topic' : ''}`}
+                                onClick={() => setSelectedCategory(topic)}
+                                style={{
+                                    padding: '1rem',
+                                    cursor: 'pointer',
+                                    border: selectedCategory === topic ? `1px solid ${track.color}` : '1px solid var(--glass-border)',
+                                    background: selectedCategory === topic ? 'rgba(255,255,255,0.05)' : 'transparent',
+                                    transition: 'all 0.3s ease'
+                                }}
+                            >
                                 {topic}
                             </li>
                         ))}
@@ -68,25 +103,7 @@ export default async function TrackPage({ params }: { params: Promise<{ id: stri
                 {/* Content Area */}
                 <section>
                     <div style={{ marginBottom: '4rem' }}>
-                        <h2 style={{ marginBottom: '2rem' }}>Core Research Explorer</h2>
-                        <VerseExplorer trackId={id} />
-                    </div>
-
-                    <div className="glass-card mirror-effect" style={{ padding: '2rem' }}>
-                        <h3 style={{ marginBottom: '1rem' }}>Featured Publication</h3>
-                        <p style={{ color: '#a0aec0', marginBottom: '1.5rem' }}>
-                            "The integration of traditional Quranic exegesis with {track.title} methodologies..."
-                        </p>
-                        <button style={{
-                            background: 'transparent',
-                            border: `1px solid ${track.color}`,
-                            color: track.color,
-                            padding: '0.75rem 1.5rem',
-                            borderRadius: '8px',
-                            cursor: 'pointer'
-                        }}>
-                            Download PDF Research
-                        </button>
+                        {renderRepository()}
                     </div>
                 </section>
             </div>

@@ -3,16 +3,15 @@ import Footer from '@/components/Footer';
 
 export default function LibraryPage() {
     const collections = [
-        { title: "Classical Tafsir Archive", items: "120+ Volumes", icon: "📚", color: "var(--accent-gold)" },
-        { title: "Manuscript Digitizations", items: "45 Rare Works", icon: "📜", color: "var(--accent-teal)" },
+        { title: "Islamic History Archive", items: "120+ Volumes", icon: "📚", color: "var(--accent-gold)" },
+        { title: "Allah's Attributes Archive", items: "45 Rare Works", icon: "📜", color: "var(--accent-teal)" },
         { title: "Visual Research Gallery", items: "200+ Interactive Models", icon: "🖼️", color: "var(--accent-blue)" },
     ];
 
     const resources = [
         { name: 'Quranic Root Dictionary', icon: '📖' },
-        { name: 'Interlinear Translation Tool', icon: '📝' },
-        { name: 'Conceptual Maps Index', icon: '🗺️' },
-        { name: 'Historical Timeline PDF', icon: '⏳' }
+        { name: 'Historical Timeline PDF', icon: '⏳' },
+
     ];
 
     return (
