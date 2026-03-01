@@ -1,7 +1,9 @@
 {
-  "/about/page": "app/about/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/library/attributes/page": "app/library/attributes/page.js",
+  "/library/history/page": "app/library/history/page.js",
   "/library/page": "app/library/page.js",
-  "/page": "app/page.js",
-  "/research/page": "app/research/page.js",
-  "/tracks/[id]/page": "app/tracks/[id]/page.js"
+  "/library/timeline/page": "app/library/timeline/page.js",
+  "/research/dictionary/page": "app/research/dictionary/page.js",
+  "/research/gallery/page": "app/research/gallery/page.js"
 }

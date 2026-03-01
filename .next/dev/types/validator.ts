@@ -45,6 +45,24 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../../src/app/library/attributes/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/library/attributes">> = Specific
+  const handler = {} as typeof import("../../../src/app/library/attributes/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../src/app/library/history/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/library/history">> = Specific
+  const handler = {} as typeof import("../../../src/app/library/history/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../src/app/library/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/library">> = Specific
@@ -54,10 +72,37 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../../src/app/library/timeline/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/library/timeline">> = Specific
+  const handler = {} as typeof import("../../../src/app/library/timeline/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../src/app/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/">> = Specific
   const handler = {} as typeof import("../../../src/app/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../src/app/research/dictionary/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/research/dictionary">> = Specific
+  const handler = {} as typeof import("../../../src/app/research/dictionary/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../src/app/research/gallery/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/research/gallery">> = Specific
+  const handler = {} as typeof import("../../../src/app/research/gallery/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

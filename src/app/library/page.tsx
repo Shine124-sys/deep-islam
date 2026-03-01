@@ -1,16 +1,17 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 export default function LibraryPage() {
     const collections = [
-        { title: "Islamic History Archive", items: "120+ Volumes", icon: "📚", color: "var(--accent-gold)" },
-        { title: "Allah's Attributes Archive", items: "45 Rare Works", icon: "📜", color: "var(--accent-teal)" },
-        { title: "Visual Research Gallery", items: "200+ Interactive Models", icon: "🖼️", color: "var(--accent-blue)" },
+        { title: "Islamic History Archive", items: "120+ Volumes", icon: "📚", color: "var(--accent-gold)", href: "/library/history" },
+        { title: "Allah's Attributes Archive", items: "45 Rare Works", icon: "📜", color: "var(--accent-teal)", href: "/library/attributes" },
+        { title: "Visual Research Gallery", items: "200+ Interactive Models", icon: "🖼️", color: "var(--accent-blue)", href: "/research/gallery" },
     ];
 
     const resources = [
-        { name: 'Quranic Root Dictionary', icon: '📖' },
-        { name: 'Historical Timeline PDF', icon: '⏳' },
+        { name: 'Quranic Root Dictionary', icon: '📖', href: "/research/dictionary" },
+        { name: 'Historical Timeline PDF', icon: '⏳', href: "/library/timeline" },
 
     ];
 
@@ -48,19 +49,21 @@ export default function LibraryPage() {
                                 <div style={{ fontSize: '4rem', marginBottom: '1.5rem', filter: `drop-shadow(0 0 15px ${col.color}40)` }}>{col.icon}</div>
                                 <h3 style={{ fontSize: '1.6rem', marginBottom: '0.5rem' }}>{col.title}</h3>
                                 <p style={{ color: 'var(--accent-teal)', marginBottom: '2rem', fontWeight: 'bold' }}>{col.items}</p>
-                                <button className="glass-btn" style={{
-                                    background: 'rgba(255,255,255,0.05)',
-                                    border: '1px solid var(--glass-border)',
-                                    color: 'var(--foreground)',
-                                    padding: '0.8rem 2rem',
-                                    borderRadius: '50px',
-                                    cursor: 'pointer',
-                                    width: '100%',
-                                    transition: 'all 0.3s',
-                                    fontWeight: 'bold'
-                                }}>
-                                    Explore Collection
-                                </button>
+                                <Link href={col.href} style={{ width: '100%', textDecoration: 'none' }}>
+                                    <button className="glass-btn" style={{
+                                        background: 'rgba(255,255,255,0.05)',
+                                        border: '1px solid var(--glass-border)',
+                                        color: 'var(--foreground)',
+                                        padding: '0.8rem 2rem',
+                                        borderRadius: '50px',
+                                        cursor: 'pointer',
+                                        width: '100%',
+                                        transition: 'all 0.3s',
+                                        fontWeight: 'bold'
+                                    }}>
+                                        Explore Collection
+                                    </button>
+                                </Link>
                             </div>
                         ))}
                     </div>
@@ -74,19 +77,21 @@ export default function LibraryPage() {
 
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.5rem' }}>
                             {resources.map(item => (
-                                <div key={item.name} className="glass-card" style={{
-                                    padding: '1.2rem 1.5rem',
-                                    background: 'rgba(255,255,255,0.02)',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '15px',
-                                    cursor: 'pointer',
-                                    transition: 'transform 0.2s ease',
-                                    border: '1px solid var(--glass-border)'
-                                }}>
-                                    <span style={{ fontSize: '1.5rem' }}>{item.icon}</span>
-                                    <span style={{ fontSize: '1.05rem', color: '#f8f9fa' }}>{item.name}</span>
-                                </div>
+                                <Link href={item.href} key={item.name} style={{ textDecoration: 'none' }}>
+                                    <div className="glass-card" style={{
+                                        padding: '1.2rem 1.5rem',
+                                        background: 'rgba(255,255,255,0.02)',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '15px',
+                                        cursor: 'pointer',
+                                        transition: 'transform 0.2s ease',
+                                        border: '1px solid var(--glass-border)'
+                                    }}>
+                                        <span style={{ fontSize: '1.5rem' }}>{item.icon}</span>
+                                        <span style={{ fontSize: '1.05rem', color: '#f8f9fa' }}>{item.name}</span>
+                                    </div>
+                                </Link>
                             ))}
                         </div>
                     </div>

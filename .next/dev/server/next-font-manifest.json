@@ -1,6 +1,14 @@
 {
   "app": {
-    "[project]/deep-islam/src/app/about/page": [
+    "[project]/deep-islam/src/app/_not-found/page": [
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+      "static/media/2a65768255d6b625-s.p.d19752fb.woff2"
+    ],
+    "[project]/deep-islam/src/app/library/attributes/page": [
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+      "static/media/2a65768255d6b625-s.p.d19752fb.woff2"
+    ],
+    "[project]/deep-islam/src/app/library/history/page": [
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
       "static/media/2a65768255d6b625-s.p.d19752fb.woff2"
     ],
@@ -8,15 +16,15 @@
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
       "static/media/2a65768255d6b625-s.p.d19752fb.woff2"
     ],
-    "[project]/deep-islam/src/app/page": [
+    "[project]/deep-islam/src/app/library/timeline/page": [
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
       "static/media/2a65768255d6b625-s.p.d19752fb.woff2"
     ],
-    "[project]/deep-islam/src/app/research/page": [
+    "[project]/deep-islam/src/app/research/dictionary/page": [
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
       "static/media/2a65768255d6b625-s.p.d19752fb.woff2"
     ],
-    "[project]/deep-islam/src/app/tracks/[id]/page": [
+    "[project]/deep-islam/src/app/research/gallery/page": [
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
       "static/media/2a65768255d6b625-s.p.d19752fb.woff2"
     ]
