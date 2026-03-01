@@ -8,8 +8,7 @@ export default function Home() {
         { title: "Metaphysics", icon: "✨", description: "The Unseen, Soul & Divine Nature", slug: "metaphysics" },
         { title: "Psychology", icon: "🧠", description: "Nafs, Behavior & Mental Balance", slug: "psychology" },
         { title: "Fiqh", icon: "⚖️", description: "Contemporary Jurisprudence & Ethics", slug: "fiqh" },
-        { title: "Metaphysics", icon: "✨", description: "The Unseen, Soul & Divine Nature", slug: "metaphysics" },
-        { title: "Psychology", icon: "🧠", description: "Nafs, Behavior & Mental Balance", slug: "psychology" },
+        
        
     ];
 
