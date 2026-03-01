@@ -4,10 +4,13 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
     const tracks = [
+        { title: "Science & Technology", icon: "🔭", description: "Cosmology & Biological Signs", slug: "science-tech" },
+        { title: "Metaphysics", icon: "✨", description: "The Unseen, Soul & Divine Nature", slug: "metaphysics" },
+        { title: "Psychology", icon: "🧠", description: "Nafs, Behavior & Mental Balance", slug: "psychology" },
         { title: "Fiqh", icon: "⚖️", description: "Contemporary Jurisprudence & Ethics", slug: "fiqh" },
         { title: "Metaphysics", icon: "✨", description: "The Unseen, Soul & Divine Nature", slug: "metaphysics" },
         { title: "Psychology", icon: "🧠", description: "Nafs, Behavior & Mental Balance", slug: "psychology" },
-        { title: "Science & Technology", icon: "🔭", description: "Cosmology & Biological Signs", slug: "science-tech" },
+       
     ];
 
     return (
