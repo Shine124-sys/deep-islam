@@ -6,7 +6,7 @@ export default function GalleryPage() {
     return (
         <main style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--background)' }}>
             <Navbar />
-
+//https://drive.google.com/drive/folders/1OkCeIyVPpd2ummPK0MJA91Fu-1SjeyOS?usp=sharing
             <div style={{ flex: 1 }}>
                 <div style={{
                     minHeight: '250px',
