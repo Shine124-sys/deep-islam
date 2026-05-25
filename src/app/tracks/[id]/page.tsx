@@ -6,6 +6,7 @@ import ScienceRepository from '@/components/ScienceRepository';
 import MetaphysicsRepository from '@/components/MetaphysicsRepository';
 import PsychologyRepository from '@/components/PsychologyRepository';
 import FiqhRepository from '@/components/FiqhRepository';
+import VerseExplorer from '@/components/VerseExplorer';
 
 const trackData: Record<string, { title: string, color: string, summary: string, topics: string[] }> = {
     fiqh: {
@@ -102,6 +103,10 @@ export default function TrackPage({ params }: { params: Promise<{ id: string }> 
 
                 {/* Content Area */}
                 <section>
+                    <div style={{ marginBottom: '3rem' }}>
+                        <h3 style={{ fontSize: '1.2rem', marginBottom: '1.5rem', color: 'var(--accent-gold)' }}>Featured Verse Analysis</h3>
+                        <VerseExplorer trackId={id} />
+                    </div>
                     <div style={{ marginBottom: '4rem' }}>
                         {renderRepository()}
                     </div>

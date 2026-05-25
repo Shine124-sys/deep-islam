@@ -8,7 +8,7 @@ interface RepositoryEntry {
     ayat: string;
     scienceDomain: string | string[];
     openQuestion: string;
-    metaphorOrEmpirical: 'Metaphor' | 'Empirical' |'Metaphorical with cosmological resonance'|'Empirical with metaphorical dimension'|'Metaphor with empirical hint'|'Metaphorical with empirical parallels'| 'Metaphorical' | 'Empirical hint' | 'Both' | 'Metaphorical with empirical hints' | 'Empirical with metaphysical depth' | 'Empirical with cultural metaphor' | 'Metaphorical with physics resonance' | 'Metaphorical/Empirical' | 'Empirical-metaphysical';
+    metaphorOrEmpirical: string;
     category: string;
 }
 
@@ -2572,7 +2572,7 @@ export default function ScienceRepository({ selectedCategory }: { selectedCatego
         : scienceData.filter(item => item.category === selectedCategory);
 
     return (
-        <div className="glass-card mirror-effect" style={{ padding: '2rem', marginTop: '3rem', overflowX: 'auto' }}>
+        <div className="glass-card mirror-effect" style={{ padding: '2rem', marginTop: '3rem', overflowX: 'auto', position: 'relative' }}>
             <h3 style={{ marginBottom: '2rem', fontSize: '1.5rem', color: 'var(--accent-gold)' }}>
                 Science & Tech Repository {selectedCategory !== 'All' && `— ${selectedCategory}`}
             </h3>
@@ -2661,13 +2661,6 @@ export default function ScienceRepository({ selectedCategory }: { selectedCatego
                 </div>
             )}
 
-            <style jsx>{`
-                @media (max-width: 768px) {
-                    table { display: none; }
-                    .mobile-rep-list { display: block !important; }
-                }
-                .mobile-rep-list { display: none; }
-            `}</style>
         </div>
     );
 }

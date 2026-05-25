@@ -4,12 +4,12 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
     const tracks = [
-        { title: "Science & Technology", icon: "🔭", description: "Cosmology & Biological Signs", slug: "science-tech" },
-        { title: "Metaphysics", icon: "✨", description: "The Unseen, Soul & Divine Nature", slug: "metaphysics" },
-        { title: "Psychology", icon: "🧠", description: "Nafs, Behavior & Mental Balance", slug: "psychology" },
-        { title: "Fiqh", icon: "⚖️", description: "Contemporary Jurisprudence & Ethics", slug: "fiqh" },
-        
-       
+        { title: "Science & Technology", icon: "🔭", description: "Cosmology & Biological Signs", href: "/tracks/science-tech" },
+        { title: "Metaphysics", icon: "✨", description: "The Unseen, Soul & Divine Nature", href: "/tracks/metaphysics" },
+        { title: "Psychology", icon: "🧠", description: "Nafs, Behavior & Mental Balance", href: "/tracks/psychology" },
+        { title: "Fiqh", icon: "⚖️", description: "Contemporary Jurisprudence & Ethics", href: "/tracks/fiqh" },
+        { title: "Islamic History Archive", icon: "📚", description: "Dynasties, Scholars & Key Milestones", href: "/library/history" },
+        { title: "Historical Timeline", icon: "⏳", description: "Chronological Journey Through Civilization", href: "/library/timeline" },
     ];
 
     return (
@@ -53,11 +53,11 @@ export default function Home() {
                     maxWidth: '1200px'
                 }}>
                     {tracks.map((track) => (
-                        <div key={track.title} className="glass-card mirror-effect" style={{ padding: '2rem', textAlign: 'left' }}>
+                        <div key={track.title} className="glass-card mirror-effect" style={{ padding: '2rem', textAlign: 'left', position: 'relative' }}>
                             <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{track.icon}</div>
                             <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{track.title}</h3>
                             <p style={{ color: '#a0aec0', marginBottom: '1.5rem' }}>{track.description}</p>
-                            <Link href={`/tracks/${track.slug}`} style={{
+                            <Link href={track.href} style={{
                                 color: 'var(--accent-teal)',
                                 textDecoration: 'none',
                                 fontWeight: 'bold',
@@ -65,7 +65,7 @@ export default function Home() {
                                 alignItems: 'center',
                                 gap: '0.5rem'
                             }}>
-                                Explore Track →
+                                Explore →
                             </Link>
                         </div>
                     ))}

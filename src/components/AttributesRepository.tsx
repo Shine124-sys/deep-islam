@@ -76,7 +76,7 @@ export default function AttributesRepository() {
                 gap: '2rem'
             }}>
                 {attributesData.map((attr, index) => (
-                    <div key={index} className="glass-card mirror-effect" style={{
+                    <div key={index} className="glass-card mirror-effect" style={{ position: 'relative',
                         padding: '2.5rem',
                         textAlign: 'center',
                         transition: 'transform 0.3s ease',
@@ -108,12 +108,6 @@ export default function AttributesRepository() {
                     </div>
                 ))}
             </div>
-
-            <style jsx>{`
-                .glass-card:hover {
-                    transform: translateY(-5px);
-                }
-            `}</style>
         </div>
     );
 }

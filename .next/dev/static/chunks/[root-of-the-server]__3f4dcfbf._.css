@@ -255,4 +255,37 @@ h1, h2, h3, h4 {
   padding: var(--section-padding);
 }
 
+.history-mobile-list {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .history-table {
+    display: none;
+  }
+
+  .history-mobile-list {
+    display: block;
+  }
+}
+
+.table-row-hover:hover {
+  background: #ffffff05;
+}
+
+.search-focus:focus {
+  outline: none;
+  border-color: var(--accent-gold) !important;
+}
+
+.mobile-rep-list {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-rep-list {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=%5Broot-of-the-server%5D__3f4dcfbf._.css.map*/

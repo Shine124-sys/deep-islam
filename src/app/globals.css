@@ -121,3 +121,39 @@ h4 {
 .section-container {
   padding: var(--section-padding);
 }
+
+/* History Repository - responsive table/card toggle */
+.history-mobile-list {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .history-table {
+    display: none;
+  }
+  .history-mobile-list {
+    display: block;
+  }
+}
+
+/* Table row hover */
+.table-row-hover:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Dictionary search input focus */
+.search-focus:focus {
+  border-color: var(--accent-gold) !important;
+  outline: none;
+}
+
+/* Repository cards - mobile toggle (Science, Psychology, Metaphysics, Fiqh) */
+.mobile-rep-list {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-rep-list {
+    display: block;
+  }
+}

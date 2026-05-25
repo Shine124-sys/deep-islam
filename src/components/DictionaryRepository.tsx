@@ -82,7 +82,7 @@ export default function DictionaryRepository() {
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '2rem' }}>
                 {filteredRoots.map((item, index) => (
-                    <div key={index} className="glass-card mirror-effect" style={{ padding: '2rem' }}>
+                    <div key={index} className="glass-card mirror-effect" style={{ padding: '2rem', position: 'relative' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1.5rem' }}>
                             <div dir="rtl" style={{ fontSize: '2.5rem', color: 'var(--accent-gold)', fontFamily: 'var(--font-serif)' }}>{item.root}</div>
                             <div style={{
@@ -119,12 +119,6 @@ export default function DictionaryRepository() {
                     </div>
                 ))}
             </div>
-
-            <style jsx>{`
-                .search-focus:focus {
-                    border-color: var(--accent-gold);
-                }
-            `}</style>
         </div>
     );
 }

@@ -2402,7 +2402,7 @@ export default function PsychologyRepository({ selectedCategory }: { selectedCat
         : psychologyData.filter(item => item.category === selectedCategory);
 
     return (
-        <div className="glass-card mirror-effect" style={{ padding: '2rem', marginTop: '3rem', overflowX: 'auto' }}>
+        <div className="glass-card mirror-effect" style={{ padding: '2rem', marginTop: '3rem', overflowX: 'auto', position: 'relative' }}>
             <h3 style={{ marginBottom: '2rem', fontSize: '1.5rem', color: 'var(--accent-teal)' }}>
                 Psychology Repository {selectedCategory !== 'All' && `— ${selectedCategory}`}
             </h3>
@@ -2456,13 +2456,6 @@ export default function PsychologyRepository({ selectedCategory }: { selectedCat
                 </div>
             )}
 
-            <style jsx>{`
-                @media (max-width: 768px) {
-                    table { display: none; }
-                    .mobile-rep-list { display: block !important; }
-                }
-                .mobile-rep-list { display: none; }
-            `}</style>
         </div>
     );
 }

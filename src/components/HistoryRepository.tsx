@@ -56,7 +56,7 @@ const historyData: HistoryEntry[] = [
 
 export default function HistoryRepository() {
     return (
-        <div className="glass-card mirror-effect" style={{ padding: '2rem', marginTop: '3rem', overflowX: 'auto' }}>
+        <div className="glass-card mirror-effect" style={{ padding: '2rem', marginTop: '3rem', overflowX: 'auto', position: 'relative' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-gold)', margin: 0 }}>
                     Islamic History Archive
@@ -64,7 +64,7 @@ export default function HistoryRepository() {
                 <span style={{ fontSize: '0.9rem', color: '#a0aec0' }}>{historyData.length} Selected Records</span>
             </div>
 
-            <table style={{ width: '100%', borderCollapse: 'collapse', color: '#a0aec0', fontSize: '0.95rem' }}>
+            <table className="history-table" style={{ width: '100%', borderCollapse: 'collapse', color: '#a0aec0', fontSize: '0.95rem' }}>
                 <thead>
                     <tr style={{ borderBottom: '1px solid var(--glass-border)', textAlign: 'left' }}>
                         <th style={{ padding: '1rem', color: 'var(--foreground)' }}>Period</th>
@@ -107,7 +107,7 @@ export default function HistoryRepository() {
             </table>
 
             {/* Mobile View */}
-            <div className="mobile-history-list">
+            <div className="history-mobile-list">
                 {historyData.map((item, index) => (
                     <div key={index} className="glass-card" style={{ padding: '1.5rem', marginBottom: '1.5rem', background: 'rgba(255,255,255,0.02)' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>
@@ -128,17 +128,6 @@ export default function HistoryRepository() {
                     </div>
                 ))}
             </div>
-
-            <style jsx>{`
-                @media (max-width: 768px) {
-                    table { display: none; }
-                    .mobile-history-list { display: block !important; }
-                }
-                .mobile-history-list { display: none; }
-                .table-row-hover:hover {
-                    background: rgba(255, 255, 255, 0.02);
-                }
-            `}</style>
         </div>
     );
 }
